@@ -69,13 +69,15 @@ class _FeedScreenState extends State<FeedScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const FeedAppBar(),
-      body: Column(
-        children: [
-          StoryList(stories: stories),
-          Expanded(
-            child: FeedList(feeds: feeds),
-          ),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            StoryList(stories: stories),
+            Expanded(
+              child: FeedList(feeds: feeds),
+            ),
+          ],
+        ),
       ),
     );
   }

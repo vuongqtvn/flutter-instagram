@@ -124,7 +124,7 @@ class FeedCardFooter extends StatelessWidget {
               ),
               children: [
                 TextSpan(
-                  text: feed.name,
+                  text: "${feed.name} ",
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
