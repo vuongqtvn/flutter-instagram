@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:learning/screens/authorization/authorization_screen.dart';
+import 'package:learning/screens/profile/profile.dart';
+// import 'package:learning/screens/direct_message/direct_message.dart';
+// import 'package:learning/screens/profile_edit/profile_edit_screen.dart';
+// import 'package:learning/screens/authorization/authorization_screen.dart';
 // import 'package:learning/screens/feed/feed_screen.dart';
 // import 'package:learning/screens/login/login_screen.dart';
 
@@ -19,7 +22,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const AuthorizationScreen(),
+      home: const ProfileScreen(),
+      // home: const DirectMessage(),
+      // home: const ProfileEdit(),
+      // home: const AuthorizationScreen(),
       // home: const LoginScreen(),
       // home: const FeedScreen(),
     );
